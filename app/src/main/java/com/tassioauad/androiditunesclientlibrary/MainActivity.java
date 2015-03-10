@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
     protected void onResume() {
         super.onResume();
 
-        final PodcastApi podcastApi = new PodcastApiImpl(this);
+        PodcastApi podcastApi = new PodcastApiImpl(this);
         podcastApi.setListener(new OnApiResultListener() {
             @Override
             public void onResult(Object[] result) {
