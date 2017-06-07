@@ -14,11 +14,11 @@ public interface PodcastApi {
 
     public PodcastEntity[] listNewPodcasts();
 
-    PodcastEntity[] listNewPodcasts(int numberOfPodcasts);
+    public PodcastEntity[] listNewPodcasts(int numberOfPodcasts);
 
     public PodcastEntity[] listPodcastByTerm(String term);
 
     public void setListener(OnApiResultListener listener);
 
-    PodcastEntity[] listPodcastByTerm(String term, int numberOfPodcasts);
+    public PodcastEntity[] listPodcastByTerm(String term, int numberOfPodcasts);
 }
